@@ -4,6 +4,7 @@ import { ScrollView } from "react-native-gesture-handler";
 import { ROUTES } from "../constants";
 import Menu from "./Menu";
 import {useNavigation} from '@react-navigation/native';
+import { Icon } from "native-base";
 
 
 const Home = () => {
@@ -11,7 +12,7 @@ const Home = () => {
     const Header = () => {
         return (
             <View style={styles.header}>
-                <Image source={require('../../assets/foody.webp')} style={{height:350 , width:'100%'}} />
+                <Image source={require('../../assets/foody.webp')} style={{height:370 , width:'100%'}} />
                 <View style={{position: 'absolute' }} >
 
                     <Text style={{fontSize:50 , color:'white'}}>Get ready to </Text>
@@ -31,7 +32,7 @@ const Home = () => {
         return (
             <View style={styles.mainbox}>
                 <View style={styles.box}>
-                   
+                
                     <Text style={{fontWeight:'500'}}>Flavorful & Organic dishes everyday we cook here</Text>
                 <Text>Habitant morbi tristique senectus et netus et malesuada fames. Tortor posuerconsequat</Text>
                     
@@ -117,7 +118,7 @@ const Home = () => {
     },
     header : {
         width: '100%',
-        height: '32%',
+        height: '30%',
         backgroundColor:'#c8c8c8',
         alignItems: 'center',
         justifyContent: 'center',

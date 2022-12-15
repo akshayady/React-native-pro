@@ -12,7 +12,11 @@ function AuthNav() {
 console.log(Stack);
   return (
 
-    <Stack.Navigator screenOptions={{}} initialRouteName = {ROUTES.LOGIN}>
+    <Stack.Navigator screenOptions={{ headerTitle: 'Hotel Rajkumar',
+    headerStyle: {
+      backgroundColor: '#57F667'
+    }
+    }} initialRouteName = {ROUTES.LOGIN}>
       <Stack.Screen name={ROUTES.LOGIN} component={Login} />
       <Stack.Screen name={ROUTES.REGISTER} component={Register} />
       <Stack.Screen name={ROUTES.HOME} component={Subnav} options={{headerShown: false}}/>
