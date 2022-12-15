@@ -14,7 +14,7 @@ console.log(Stack);
 
     <Stack.Navigator screenOptions={{ headerTitle: 'Hotel Rajkumar',
     headerStyle: {
-      backgroundColor: 'orange'
+      backgroundColor: '#57F667'
     }
     }} initialRouteName = {ROUTES.LOGIN}>
       <Stack.Screen name={ROUTES.LOGIN} component={Login} />
